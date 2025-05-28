@@ -1,0 +1,103 @@
+.form-holder {
+    position: relative;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 748px;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid var(--primary);
+    background: var(--card);
+    padding-top: clamp(1.875rem, -0.842rem + 4.35vw, 4.375rem);
+    padding-bottom: clamp(1.875rem, -0.842rem + 4.35vw, 4.375rem);
+    padding-right: clamp(6.25rem, 3.261rem + 4.78vw, 9rem);
+    padding-left: clamp(6.25rem, 3.261rem + 4.78vw, 9rem);
+}
+
+.form-holder .title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 136.39%;
+    color: var(--primary);
+    margin: 0 auto;
+}
+
+.form-holder .form-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-floating {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+
+.form-floating .form-control {
+    position: relative;
+    display: block;
+    padding: 22px 30px 12px;
+    height: 60px;
+    color: var(--stroke);
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid var(--stroke);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    background: var(--card);
+    height: -moz-fit-content;
+    height: fit-content;
+    transition: 0.2s ease-in;
+    box-sizing: border-box;
+}
+
+
+
+.form-floating .form-control::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--stroke);
+    transition: all 0.2s ease-in;
+    opacity: 1;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.btn {
+    width: 100%;
+    background: var(--primary);
+    color: var(--card);
+    transition: all 0.3s ease-in;
+    padding: 14px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: var(--card);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
